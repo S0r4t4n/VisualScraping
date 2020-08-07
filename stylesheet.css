@@ -1,0 +1,13 @@
+#blocklyDiv {
+    height: 100vh;
+}
+body{
+    overflow-y: hidden;
+}
+li {
+    border-bottom: 1px solid #393939;
+}
+.right-area{
+    color: #CAE6E8;
+    background-color: #393939;
+}
