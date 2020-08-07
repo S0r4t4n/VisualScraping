@@ -11,3 +11,10 @@ li {
     color: #CAE6E8;
     background-color: #393939;
 }
+.cl{
+    height: 60%;
+}
+.codeArea{
+    height: 75%;
+    background-color: #282C34;
+}

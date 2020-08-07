@@ -50,7 +50,6 @@ Promise.all(
 
 	/* Inject your workspace */
 	var workspace = Blockly.inject('blocklyDiv', options);
-
 	/* Load Workspace Blocks from XML to workspace. Remove all code below if no blocks to load */
 
 	/* TODO: Change workspace blocks XML ID if necessary. Can export workspace blocks XML from Workspace Factory. */
@@ -58,4 +57,22 @@ Promise.all(
 
 	/* Load blocks to workspace. */
 	Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
+
+	function showCode() {
+		Blockly.Python.INFINITE_LOOP_TRAP = null;
+		const pre = document.getElementById('pyCode');
+		pre.innerHTML = Blockly.Python.workspaceToCode(workspace);
+		hljs.highlightBlock(pre);
+	}
+	document.getElementById('showCode').addEventListener('click', showCode, false);
+	function saveCode(){
+		showCode()
+		const code = document.getElementById('pyCode').innerText;
+		let blob = new Blob([code],{type:"text/plain"})
+		let link = document.createElement('a');
+		link.href = URL.createObjectURL(blob);
+		link.download = 'code.py';
+		link.click();
+	}
+	document.getElementById('saveCode').addEventListener('click', saveCode, false);
 });
