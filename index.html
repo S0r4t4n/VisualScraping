@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Custom Blocks - Blockly</title>
+    <title>VisualScraping</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -13,9 +13,9 @@
     <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blocks_compressed.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/python_compressed.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/msg/js/ja.js"></script>
-    <script src="tarrget.js"></script>
-    <script src="target_block.js"></script>
-    <script src="workspace.js" defer></script>
+    <script src="js/target.js"></script>
+    <script src="js/target_block.js"></script>
+    <script src="js/workspace.js" defer></script>
  
 </head>
 
@@ -28,6 +28,7 @@
                     <div class = "container">
                         <p class="h2">Change log</p>
                         <ul class="list-group overflow-auto">
+                            <li class="list-group-item-info">Change directory structure</li>
                             <li class="list-group-item-danger">After all, I had to use XML, so I made it possible to write order processing using Fetch API in "workspace.js"</li>
                             <li class="list-group-item-warning">Change block definition from XML to javascript for ease of handling"target.js"</li>
                             <li class="list-group-item-info">Add an empty block for testing</li>

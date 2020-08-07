@@ -1,5 +1,5 @@
 Promise.all(
-	["workspace.xml", "toolbox.xml"].map(async file => {
+	["xml/workspace.xml", "xml/toolbox.xml"].map(async file => {
 		return fetch(file).then(
 			(res) => {
 				return res.text();
