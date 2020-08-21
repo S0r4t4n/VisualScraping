@@ -1,5 +1,5 @@
 <h1 align='center'>VisualScraping</h1>
-<h2 align='center'>:mortar_board:Graduation Research Repository:mortar_board:</h2>
+<h2 align='center'>:mortar_board:Senior Project Repository:mortar_board:</h2>
 
 ## :earth_asia: App URL
 ### **https://mellow-violet.space**    
