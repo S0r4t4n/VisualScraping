@@ -20,11 +20,36 @@
 	</script>
 	<script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/python_compressed.js">
 	</script>
-	<script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/msg/js/ja.js">
+	<script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/msg/js/en.js">
 	</script>
-	<script src="js/target.js">
+	<script src="js/requests.js">
 	</script>
-	<script src="js/target_block.js">
+	<script src="js/requests_block.js">
+	</script>
+	<script src="js/variables.js">
+	</script>
+	<script src="js/variables_block.js">
+	</script>
+	<script src="js/funs.js">
+	</script>
+	<script src="js/funs_block.js">
+	</script>
+	<script src="js/tmp.js">
+	</script>
+	<script src="js/tmp_block.js">
+	</script>
+	<script src="js/href.js">
+	</script>
+	<script src="js/href_block.js">
+	</script>
+		<script src="js/href.js">
+	</script>
+	<script src="js/href_block.js">
+	</script>
+	</script>
+	<script src="js/array.js">
+	</script>
+	<script src="js/array_block.js">
 	</script>
 	<script defer src="js/workspace.js">
 	</script>
@@ -34,27 +59,11 @@
 		<div class="row">
 			<div class="col-9" id="blocklyDiv"></div>
 			<div class="col-3 right-area">
-				<div class="row h-50">
-					<div class="container">
-						<p class="h2">Change log</p>
-						<ul class="list-group overflow-auto cl">
-                            <li class="list-group-item-danger">Implement save code</li>
-                            <li class="list-group-item-danger">Implement code preview</li>
-							<li class="list-group-item-info">Change directory structure</li>
-							<li class="list-group-item-danger">After all, I had to use XML, so I made it possible to write order processing using Fetch API in "workspace.js"</li>
-							<li class="list-group-item-warning">Change block definition from XML to javascript for ease of handling"target.js"</li>
-							<li class="list-group-item-success">Add an empty block for testing</li>
-							<li class="list-group-item-warning">Change framework loading to use CDN due to server storage limitation</li>
-							<li class="list-group-item-success">Add minimal basic blocks</li>
-							<li class="list-group-item-warning">Layout with Bootstrap 4</li>
-							<li class="list-group-item-danger">In the previous implementation, It had to rewrite the xml every time, so fundamentally changed the implementation</li>
-						</ul><a href="https://github.com/S0r4t4n/VisualScraping"target='_blank'><img class="mt-2" src="https://gh-card.dev/repos/S0r4t4n/VisualScraping.svg"></a>
-					</div>
-				</div>
-				<div class="row h-50">
+				
+				<div class="row">
 					<div class="container">
 						<p class="h2">Python Code</p>
-						<pre class="h-75 codeArea"><code class="Python" id="pyCode"></code></pre>
+						<pre class="codeArea"><code class="Python" id="pyCode"></code></pre>
 						<div class="text-right">
 							<button class="btn btn-primary" id="showCode">View Code</button> <button class="btn btn-success" id="saveCode">Save Code</button>
 						</div>

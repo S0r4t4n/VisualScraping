@@ -1,1 +1,42 @@
-<xml xmlns="https://developers.google.com/blockly/xml" id="workspaceBlocks" style="display: none"></xml>
+<xml xmlns="https://developers.google.com/blockly/xml" id="workspaceBlocks" style="display: none">
+  <variables>
+    <variable id="]9Pg}#r/V/bX:An|_m6}">tmp</variable>
+  </variables>
+  <block type="import_requests" id="b_|:Jz*I3D-Drq!I(2Jg" x="13" y="13"></block>
+  <block type="import_beautifulsoup" id="gQ./u2(]g4X-feI|q7aR" x="13" y="63"></block>
+  <block type="get_source" id="8s+4+no|T(2BVy;{5~iy" x="13" y="113">
+    <value name="url">
+      <block type="text" id="i%w/`%4tTnA*uhMZZiUL">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <next>
+      <block type="scraped1" id="6xMiN/OZws6!K^~RLIeh">
+        <value name="src">
+          <block type="source" id="%cA;5hpGWkH$kR5%/Jx*">
+            <value name="arg">
+              <block type="find_all" id="X)+{IzRs`o_L]iuwJ%vU"></block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="controls_forEach" id="f-*I`lBB[P%PMCu}.Zj]" x="13" y="213">
+    <field name="VAR" id="]9Pg}#r/V/bX:An|_m6}">tmp</field>
+    <value name="LIST">
+      <block type="get_scraped1" id="rNzM55:r4Ym.2WsH#MbS"></block>
+    </value>
+    <statement name="DO">
+      <block type="text_print" id="fQo(?=pG(ukEdnaA-TN[">
+        <value name="TEXT">
+          <block type="tmp" id="$2Eh,9mUy)4|{Bp9j6w.">
+            <value name="arg">
+              <block type="get_text" id="0T`/~iLxF=$6D_*C]K]0"></block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

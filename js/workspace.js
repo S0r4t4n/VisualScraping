@@ -61,12 +61,13 @@ Promise.all(
 	function showCode() {
 		Blockly.Python.INFINITE_LOOP_TRAP = null;
 		const pre = document.getElementById('pyCode');
-		pre.innerHTML = Blockly.Python.workspaceToCode(workspace);
+		pre.innerHTML = Blockly.Python.workspaceToCode(workspace).replace("(.text)",".text").replace("(.string)",".string").replace("((","(").replace("))",")").replace("= (","= ").replace("\n)","").replace("(.",".").replace("))",")").replace("((","(").replace("(.",".").replace("))",")").replace("href)","href").replace(")))",")").replace("(.get",".get");
 		hljs.highlightBlock(pre);
 	}
 	document.getElementById('showCode').addEventListener('click', showCode, false);
 	function saveCode(){
 		showCode()
+		document.getElementById('pyCode').innerText.replace("(.text)",".text").replace("(.string)",".string").replace("((","(").replace("))",")").replace("= (","= ").replace("\n)","").replace("(.",".").replace("))",")").replace("((","(").replace("(.",".").replace("))",")").replace("href)","href").replace(")))",")").replace("(.get",".get")
 		const code = document.getElementById('pyCode').innerText;
 		let blob = new Blob([code],{type:"text/plain"})
 		let link = document.createElement('a');
