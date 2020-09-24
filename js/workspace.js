@@ -18,6 +18,7 @@ Promise.all(
 	var toolbox = document.getElementById("toolbox");
 
 	var options = {
+		theme:'dark',
 		toolbox: toolbox,
 		collapse: true,
 		comments: true,

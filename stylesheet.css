@@ -1,20 +1,21 @@
 #blocklyDiv {
+    background-color: #393939;
     height: 100vh;
 }
 body{
     overflow-y: hidden;
 }
-li {
-    border-bottom: 1px solid #393939;
-}
 .right-area{
     color: #CAE6E8;
-    background-color: #393939;
+    background-color: #333333;
 }
 .cl{
     height: 60%;
 }
 .codeArea{
-    height: 75%;
+    height: 35vh;
     background-color: #282C34;
+}
+.h2{
+    padding:5px;
 }
