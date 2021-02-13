@@ -1,2 +1,0 @@
-# VisualScraping
-Graduation Research Repository
